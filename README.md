@@ -9,7 +9,7 @@ Final output. Download niyo na lang kung gusto niyo i-analyze.
 **PDF Documentation:** https://git.io/JJnjN   
 **My Final Code:** https://git.io/JJnj1   
 
-<img src="bulsurd.jpg">
+<img src="bulsu.rd.jpg">
 
 Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain kung kailanganin.
 
