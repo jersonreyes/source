@@ -1,6 +1,6 @@
 <p align="center"> 
     
-    # C++ PROJECT 
+# C++ PROJECT 
 
 </p>
 
