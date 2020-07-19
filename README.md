@@ -9,7 +9,7 @@ Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi 
 Final output. Download niyo na lang kung gusto niyo i-analyze.   
 **EXE Application. Pwede i-run:** https://git.io/JJnjx   
 **PDF Documentation:** https://git.io/JJnjN   
-**My Final Code:** https://git.io/JJnj1   
+**Final Code Ko:** https://git.io/JJnj1   
 
 
 Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain kung kailanganin.
