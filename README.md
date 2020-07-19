@@ -1,7 +1,7 @@
 # C++ PROJECT 
 
 *Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi maisingit dahil sa sitwasyon. I'm with you guys <3 
-Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo `pinagaaralan`. Nandito na lahat guys. May comments naman sa loob ng code. Analyze niyo na lang at gawa kayo ng sarili niyong version or kopya depende sa pangangailangan. God bless!* 
+Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo pinagaaralan. Nandito na lahat guys. May comments naman sa loob ng code. Analyze niyo na lang at gawa kayo ng sarili niyong version or kopya depende sa pangangailangan. God bless!* 
 
 <img src="bulsu.rd.jpg" width="100%">
 
