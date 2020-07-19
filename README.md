@@ -1,4 +1,4 @@
-<p style="text-align: center;">
+<center>
 
 # C++ PROJECT 
 
