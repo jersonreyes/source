@@ -5,9 +5,9 @@
 Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo `pinagaaralan`. Nandito na lahat guys. May comments naman sa loob ng code. Pagsama samahin niyo na lang depende sa pangangailangan. God bless!* 
 
 Eto yung final output nung sakin. Download niyo na lang kung gusto niyo i-analyze.   
-**APP:** https://github.com/jersonreyes/source/blob/master/BULSU.RD.exe   
-**PDF:** https://github.com/jersonreyes/source/blob/master/Reyes%2C%20Jerson%20A.%20-%20FInal%20Project.pdf   
-**Final Code:** https://github.com/jersonreyes/source/blob/master/Final_JersonReyes1Ig1.cpp   
+**EXE APP:** https://git.io/JJnjP   
+**PDF DOCUMENTATION:** https://git.io/JJnjX
+**FINAL CODE:** https://git.io/JJnj1
 
 Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain kung kailanganin.
 
