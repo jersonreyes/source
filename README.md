@@ -11,7 +11,8 @@ Final output. Download niyo na lang kung gusto niyo i-analyze.
 **Final code ko:** https://git.io/JJnj1   
 
 
-Iba yung code nung sakin kasi may iba ginawa kong approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain kung kailanganin.
+Iba yung code nung sakin kasi may iba ginawa kong approach.    
+Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha.
 
 # MAIN CODE
 ### HEADER & DECLARATION
