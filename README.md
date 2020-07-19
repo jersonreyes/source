@@ -9,7 +9,7 @@ Eto yung final output nung sakin.
 **PDF:** https://github.com/jersonreyes/source/blob/master/Reyes%2C%20Jerson%20A.%20-%20FInal%20Project.pdf   
 **Final Code:** https://github.com/jersonreyes/source/blob/master/Final_JersonReyes1Ig1.cpp   
 
-**Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry magkakadamay-damay tayo hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain.**
+Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain kung kailanganin.
 
 # MAIN CODE
 ### HEADER & DECLARATION
