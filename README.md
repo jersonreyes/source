@@ -1,11 +1,11 @@
 # <p align="center">C++ PROJECT 
 
-*Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi maisingit dahil sa sitwasyon. I'm with you guys <3 
+*<p align="center">Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi maisingit dahil sa sitwasyon. I'm with you guys <3 
 Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo `pinagaaralan`. Nandito na lahat guys. May comments naman sa loob ng code. Analyze niyo na lang at gawa kayo ng sarili niyong version or kopya depende sa pangangailangan. God bless!* 
 
 <img src="bulsu.rd.jpg" width="100%">
 
-Final output. Download niyo na lang kung gusto niyo i-analyze.   
+ <p align="center">Final output. Download niyo na lang kung gusto niyo i-analyze.   
 **EXE Application. Pwede i-run:** https://git.io/JJnjx   
 **PDF Documentation:** https://git.io/JJnjN   
 **Final code ko:** https://git.io/JJnj1   
