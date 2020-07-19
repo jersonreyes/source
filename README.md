@@ -12,7 +12,7 @@ Final output. Download niyo na lang kung gusto niyo i-analyze.
 
 
 Iba yung code nung sakin kasi iba ginawa kong approach. Wag niyo kopyahan guys.   
-Alam ni ma'am yung style ko please wag niyo na subukan para hindi kayo mapahamak hahahaha.
+Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak hahahaha.
 
 # MAIN CODE
 ### HEADER & DECLARATION
