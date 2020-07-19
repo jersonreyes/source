@@ -5,7 +5,7 @@
 Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo `pinagaaralan`. Nandito na lahat guys. May comments naman sa loob ng code. Pagsama samahin niyo na lang depende sa pangangailangan. God bless!* 
 
 Final output. Download niyo na lang kung gusto niyo i-analyze.   
-**EXE APP:** https://git.io/JJnjP   
+**EXE APP. PWEDE I-RUN:** https://git.io/JJnjP   
 **PDF DOCUMENTATION:** https://git.io/JJnjX   
 **FINAL CODE:** https://git.io/JJnj1   
 
