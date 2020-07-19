@@ -30,9 +30,9 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       int index, deleted = -1;
     } student[25];
     
-    //INITIALIZATION AND PROTOTYPES
+    //INITIALIZATION AND PROTOTYPES (BAGUHIN NIYO YUNG num_students KUNG ILAN GUSTO NIYONG LALAGYAN NG INFO)
     void findLowest(), findHighest(), findRec(), sortName(), sortGrade(), calculate(), showAll(), create(int ref_id), modify(), del(), displayMenu(), firstRun();
-    int idExists(string referred_id), verifyRun(),num_students = 2, student_counter = 0, previous_deletion = 0;
+    int idExists(string referred_id), verifyRun(), num_students = 2, student_counter = 0, previous_deletion = 0;
     
     int main() {
       displayMenu(); return 0;
