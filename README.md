@@ -1,15 +1,15 @@
+
 # C++ PROJECT
 
-Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi na maisingit dahil sa sitwasyon. I'm with you guys <3 
-
-Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo `pinagaaralan`. Nandito na lahat guys. May comments naman sa loob ng code. Pagsama samahin niyo na lang depende sa pangangailangan. God bless! 
+*Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi na maisingit dahil sa sitwasyon. I'm with you guys <3 
+Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi pagaaral kung hindi mo `pinagaaralan`. Nandito na lahat guys. May comments naman sa loob ng code. Pagsama samahin niyo na lang depende sa pangangailangan. God bless!* 
 
 Eto yung final output nung sakin.  
 **APP:** https://github.com/jersonreyes/source/blob/master/BULSU.RD.exe   
 **PDF:** https://github.com/jersonreyes/source/blob/master/Reyes%2C%20Jerson%20A.%20-%20FInal%20Project.pdf   
 **Final Code:** https://github.com/jersonreyes/source/blob/master/Final_JersonReyes1Ig1.cpp   
 
-Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry magkakadamay-damay tayo hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain.
+**Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry magkakadamay-damay tayo hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain.**
 
 # MAIN CODE
 ### HEADER & DECLARATION
