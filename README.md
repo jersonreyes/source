@@ -1,4 +1,5 @@
-
+<p align="center">
+    
 # C++ PROJECT
 
 *Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi maisingit dahil sa sitwasyon. I'm with you guys <3 
@@ -13,6 +14,8 @@ Final output. Download niyo na lang kung gusto niyo i-analyze.
 
 
 Iba yung code nung sakin kasi may triny akong ibang approach. Wag niyo kopyahan guys. Alam ni ma'am yung style ko please wag niyo na itry para hindi kayo mapahamak hahahaha. Yung ginawa ko sa baba, mas madali siyang ma-explain kung kailanganin.
+
+</p>
 
 # MAIN CODE
 ### HEADER & DECLARATION
