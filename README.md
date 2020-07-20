@@ -83,95 +83,28 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
 
 ### MENU
 
-    void create(int ref_id) {
-      int index, j, i = 0, student_num = 0, runs=0, limit=0;
-      char prename[25], sex;
-      string id;
-    
-      //ADJUST INDEX TO LAST DELETED INDEX TO OVERWRITE | BEST METHOD | LESS COMPLICATED
-      for(int f=0; f < num_students; f++)
-        if(student[f].deleted == 1)
-            i = f;
-    
-      //EXIT IF MAX STUDENT NUMBER IS REACHED
-        if (student_counter>=num_students) {
-            cout << "Maximum amount of students reached";
-            processChoice();
-        }
-    
-      for (; i <= num_students-student_counter; i++) {
-    
-        // FOR NEW RECORDS/DEFAULT + INCREMENT STUDENT COUNTER
-        student_counter++;
-        student[i].index = student_counter;
-        student[i].deleted = 0;
-    
-        cout << "\nEnter Student"
-             << " Name"
-             << "\t|   ";
-        cin.ignore();
-        cin.getline(student[i].name, 25);
-    
-      IDVERIFY:
-        cout << "Enter ID number"
-             << "\t\t|   ";
-        cin >> id;
-    
-        int find = idExists(id);
-    
-        // IF ID IS NON-EXISTENT, CONTINUE
-        if (find < 0) {
-          // STORE ID
-          student[i].ID = id;
-          cout << "Enter Sex"<< "\t\t|   ";cin.ignore();cin >> student[i].sex;
-          cout << "Score in Quiz"<< "\t\t|   ";cin.ignore();cin >> student[i].score_quiz;
-          cout << "Score in Assignment"<< "\t|   ";cin >> student[i].score_assi;
-          cout << "Score in Midterm Exam"<< "\t|   ";cin >> student[i].score_mid;
-          cout << "Score in Final Exam"<< "\t|   ";cin >> student[i].score_final;
-          cout << "Score in Activity"<< "\t|   ";cin >> student[i].score_act;
-          cout << "Score in Project"<< "\t|   ";cin >> student[i].score_proj;
-    
-          // PRE-COMPUTE DATA BEFORE LEAVING
-          int total = student[i].score_quiz + student[i].score_assi +
-                      student[i].score_mid + student[i].score_final +
-                      student[i].score_act + student[i].score_proj;
-          student[i].score_total = total;
-    
-          // FOR FINAL GRADE
-          float final =
-              ((student[i].score_quiz / 150) * 100 * .20) +
-              (((student[i].score_mid / 2 + student[i].score_final / 2) / 100) * 100 * .30) +
-              ((student[i].score_act / 150) * 100 * .25) +
-              ((student[i].score_proj / 100) * 100 * .15) +
-              ((student[i].score_assi / 20) * 100 * .10);
-    
-          student[i].final_grade = final;
-    
-          if (final >= 75)
-            student[i].remarks = "Passed";
-          else
-            student[i].remarks = "Failed";
-        } else {
-          // ASK TO ENTER ID AGAIN
-          cout << "\nID already taken. Please enter another ID.\n";
-          goto IDVERIFY;
-        }
-        runs++;
-      }
+    void displayMenu() {
+      cout << "[1] Add student records\n"
+              "[2] Delete student records\n"
+              "[3] Update student records\n"
+              "[4] View all student records\n"
+              "[5] Calculate the final grade of a selected student\n"
+              "[6] Show student who gets the max total score\n"
+              "[7] Show student who gets the min total score\n"
+              "[8] Find student by ID\n"
+              "[9] Sort records by total scores\n"
+              "[10] Sort records by student's name\n\n"
+              "[M] Display the Menu\n"
+              "[X] Exit the Program\n";
       processChoice();
     }
 
 ### CREATE
 
     void create(int ref_id) {
-      int index, j, i = 0, student_num = 0, runs=0, limit=0;
+      int index, j, student_num = 0, runs=0, limit=0;
       char prename[25], sex;
       string id;
-    
-      //ADJUST INDEX TO LAST DELETED INDEX TO OVERWRITE | BEST METHOD | LESS COMPLICATED
-      for(int f=0; f < num_students; f++)
-        if(student[f].deleted == 1)
-            i = f;
     
       //EXIT IF MAX STUDENT NUMBER IS REACHED
         if (student_counter>=num_students) {
@@ -179,7 +112,15 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
             processChoice();
         }
     
-      for (; i <= num_students-student_counter; i++) {
+      for (int i=0; i <= num_students; i++) {
+    
+        //ADJUST INDEX TO LAST DELETED INDEX TO OVERWRITE | BEST METHOD | LESS COMPLICATED
+        for(int f=0; f < num_students; f++)
+        if(student[f].deleted == 1)
+            i = f;
+    
+        if (student_counter>=num_students) //EXIT IF MAX (FOR NEW RECORD CREATION)
+            processChoice();
     
         // FOR NEW RECORDS/DEFAULT + INCREMENT STUDENT COUNTER
         student_counter++;
@@ -236,7 +177,6 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
           cout << "\nID already taken. Please enter another ID.\n";
           goto IDVERIFY;
         }
-        runs++;
       }
       processChoice();
     }
