@@ -17,7 +17,7 @@ Iba yung code nung sakin kasi iba ginawa kong approach. Wag niyo kopyahan guys.
 Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak HAHAHAHA.
 
 # MAIN CODE
-**UPDATE:** May binago kong marami sa code. Kung nakopya niyo na nung una, kopyahin niyo ulit. Important yung pinalitan kong mga line. Salamat!
+**UPDATE:** May binago kong line sa code. Kung nakopya niyo na nung una, kopyahin niyo ulit. Important yung pinalitan kong line. Salamat!
 ### HEADER & DECLARATION
 
     #include <iostream>
@@ -491,7 +491,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       } else {
         for (int index = 0; index < num_students; index++) {
             if (student[index].ID == id) {
-              cout << "\nShowing Student List\n\n";
+              cout << "\nStudent Found\n\n";
               cout << "\nID NUMBER\tName\t\t\tSex\t\tTotal Score";
               cout << endl
                    << student[index].ID << "\t\t" << student[index].name << "\t\t"
@@ -520,7 +520,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
           index = j;
         }
       }
-      cout << "\nShowing Student List\n\n";
+      cout << "\nShowing Highest Grade Holder\n\n";
       cout << "\nID NUMBER\tName\t\t\tSex\t\tTotal Score";
       cout << endl
            << student[index].ID << "\t\t" << student[index].name << "\t\t"
@@ -546,7 +546,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
           index = j;
         }
       }
-      cout << "\nShowing Student List\n\n";
+      cout << "\nShowing Lowest Grade Holder\n\n";
       cout << "\nID NUMBER\tName\t\t\tSex\t\tTotal Score";
       cout << endl
            << student[index].ID << "\t\t" << student[index].name << "\t\t"
