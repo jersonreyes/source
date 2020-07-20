@@ -410,7 +410,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
         }
       }
       // OUTPUT SORTED DATA
-      cout << "\nList Sorted by Name\n\n";
+      cout << "\nList Sorted by Grade\n\n";
       cout << "\nID NUMBER\tNAME\t\t\tSex\t\tFINAL GRADE";
       for (int f = 0; f < num_students; f++) {
         if (student[f].deleted == 0) {
