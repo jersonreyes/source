@@ -1,3 +1,4 @@
+
 # C++ PROJECT 
 
 *Para sa mga walang magamit na computer ngayong quarantine at sa mga madaming iniisip at hindi maisingit dahil sa sitwasyon. I'm with you guys <3 
@@ -15,6 +16,7 @@ Iba yung code nung sakin kasi iba ginawa kong approach. Wag niyo kopyahan guys.
 Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak HAHAHAHA.
 
 # MAIN CODE
+**UPDATE:** May binago kong line sa code. Kung nakopya niyo na nung una, kopyahin niyo ulit. Important yung pinalitan kong line. Salamat!
 ### HEADER & DECLARATION
 
     #include <iostream>
@@ -104,12 +106,19 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       char prename[25], sex;
       string id;
     
-      if(previous_deletion) { //ADJUST INDEX TO LAST INDEX FOR PREVIOUS DELETION
-        i = previous_deletion;
-      }
+      if(previous_deletion) //ADJUST INDEX TO LAST INDEX FOR PREVIOUS DELETION
+        i = num_students+previous_deletion;
     
-      for (; i < num_students + previous_deletion; i++) {
-        if (runs>num_students-student_counter) break; //FOR PREVENTING ADDING IF MAX STUDENT NUMBER IS REACHED
+      //FOR PREVENTING ADDING IF MAX STUDENT NUMBER IS REACHED
+        if (student_counter>=num_students) {cout << "\nReached maximum amount of students."; processChoice();}
+    
+      for (; i <= num_students + previous_deletion; i++) {
+        //COMPENSATING FOR PREVIOUS DELETION
+        if (runs>num_students-student_counter && previous_deletion) break;
+    
+        //BREAK IF MAX IS REACHED
+        if (student_counter>=num_students) break;
+    
         // FOR NEW RECORDS/DEFAULT + INCREMENT STUDENT COUNTER
         student_counter++;
         student[i].index = student_counter;
@@ -185,7 +194,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       cout << "\n\nEnter ID of student record to delete: ";
       cin >> student_id;
     
-      for (int i = 0; i < num_students + previous_deletion; i++) {
+      for (int i = 0; i <= num_students + previous_deletion; i++) {
         // RECORD FOUND
         if (student[i].ID == student_id) {
           // CONFIRMATION
@@ -194,10 +203,12 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
           cin >> confirm;
     
           if (confirm == 'y' || confirm == 'Y') {
+	        // PWEDE NIYO I-SET LAHAT YUNG STRUCT ARRAY SA NULL. PARA MARESET YUNG MEMORY. KASO HAHABA YUNG CODE.
+	        // EXAMPLE (student[i].name = "")
             // SET IGNORE FOR NEXT SEARCH
-            // PWEDE NIYO I-SET SA NULL LAHAT NG VALUE NG STRUCT ARRAY. KASO HAHABA YUNG CODE. GANTO NA LANG MUNA. 
-            // KUNG GAGAWIN NIYO ETO SAMPLE: (student[i].id = NULL;)
             student[i].deleted = 1;
+            // RESET ID. TO PREVENT DUPLICATION ERROR
+            student[i].ID = "-1";
             status = 1;
             previous_deletion++;
             student_counter--;
@@ -289,10 +300,9 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
 
 *Return student index from ID. Can also be used to check if ID already exists*
 
-
     int idExists(string referred_id) {
       int i = -1;
-      for (int z = 0; z < num_students + previous_deletion; z++) {
+      for (int z = 0; z <= num_students + previous_deletion; z++) {
         if (student[z].ID == referred_id) {
           i = student[z].index - 1;
         }
@@ -306,7 +316,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
     void showAll() {
       firstRun();
       cout << "\nID NUMBER\tName\t\t\tSex\t\tTotal Score";
-      for (int index = 0; index < num_students + previous_deletion; index++) {
+      for (int index = 0; index <= num_students + previous_deletion; index++) {
         if (student[0].index != 0) {  // NO STUDENTS ADDED YET
           // IGNORE DELETED STUDENTS (BLANK RESULTS)
           if (student[index].deleted != 1 && student[index].deleted != -1) {
@@ -330,7 +340,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       int find = idExists(ref_id);
     
       if (find >= 0) {
-        for (int j = 0; j < num_students + previous_deletion; j++) {
+        for (int j = 0; j <= num_students + previous_deletion; j++) {
           if (student[j].ID == ref_id) {
             cout << "\nShowing Final Grade\n\n";
             cout << "\nID NUMBER\tName\t\t\tFinal Grade\t\tRemarks";
@@ -351,8 +361,8 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
 
     void sortName() {
       firstRun();
-      for (int i = 0; i < num_students + previous_deletion; i++) {
-        for (int j = i; j < num_students + previous_deletion; j++) {
+      for (int i = 0; i <= num_students + previous_deletion; i++) {
+        for (int j = i; j <= num_students + previous_deletion; j++) {
           if (string(student[i].name) > string(student[j].name)) {
             swap(student[i].ID, student[j].ID);
             swap(student[i].name, student[j].name);
@@ -376,10 +386,10 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
 
 ### SORT BY GRADE
 
-    void sortGrade() {
+     void sortGrade() {
       firstRun();
-      for (int i = 0; i < num_students + previous_deletion; i++) {
-        for (int j = i; j < num_students + previous_deletion; j++) {
+      for (int i = 0; i <= num_students + previous_deletion; i++) {
+        for (int j = i; j <= num_students + previous_deletion; j++) {
           if (student[i].final_grade <= student[j].final_grade) {
             swap(student[i].ID, student[j].ID);
             swap(student[i].name, student[j].name);
@@ -403,7 +413,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
 
 ### FIND BY ID
 
-    void findRec() {
+     void findRec() {
       firstRun();
       string id;
     
@@ -418,7 +428,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
         cout << "OOPS! ID doesn't seem to match any records!\n";
         goto MOD;
       } else {
-        for (int index = 0; index < num_students + previous_deletion; index++) {
+        for (int index = 0; index <= num_students + previous_deletion; index++) {
           if (student[0].deleted != 0) {  // NO STUDENTS ADDED YET
             if (student[index].ID == id) {
               cout << "\nShowing Student List\n\n";
@@ -432,13 +442,15 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       }
       processChoice();
     }
-
+   
 ### HIGHEST GRADE HOLDER
 
-    void findHighest() {
+   
+
+     void findHighest() {
       firstRun();
       int index = 0, current_value = 0;
-      for (int j = 0; j < num_students + previous_deletion; j++) {
+      for (int j = 0; j <= num_students + previous_deletion; j++) {
         if (current_value <= student[j].score_total) {
           current_value = student[j].score_total;
           index = student[j].index - 1;
@@ -451,13 +463,17 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
            << student[index].sex << "\t\t" << student[index].score_total;
       processChoice();
     }
+    
+    ### LOWEST GR
 
-### LOWEST GRADE HOLDER
+ADE HOLDER
 
-    void findLowest() {
+   
+
+     void findLowest() {
       firstRun();
       int index = 0, current_value = 0;
-      for (int j = 0; j < num_students + previous_deletion; j++) {
+      for (int j = 0; j <= num_students + previous_deletion; j++) {
         if (student[j].score_total <= current_value) {
           current_value = student[j].score_total;
           index = student[j].index - 1;
@@ -470,8 +486,10 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
            << student[index].sex << "\t\t" << student[index].score_total;
       processChoice();
     }
+    
+    ### EXTRA GUA
 
-### EXTRA GUARD
+RD
 
 Prevent any task from starting by requiring records to be added first.
 
@@ -481,4 +499,3 @@ Prevent any task from starting by requiring records to be added first.
         processChoice();
       }
     }
-
