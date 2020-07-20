@@ -195,6 +195,8 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
     
           if (confirm == 'y' || confirm == 'Y') {
             // SET IGNORE FOR NEXT SEARCH
+            // PWEDE NIYO I-SET SA NULL LAHAT NG VALUE NG STRUCT ARRAY. KASO HAHABA YUNG CODE. GANTO NA LANG MUNA. 
+            // KUNG GAGAWIN NIYO ETO SAMPLE: (student[i].id = NULL;)
             student[i].deleted = 1;
             status = 1;
             previous_deletion++;
