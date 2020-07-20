@@ -70,9 +70,10 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
       else if (choice == "10")
         sortName();
       else if (choice == "x" || choice == "X") {
+        cin.ignore();
         system("cls");
         cout << "Thank you for using the program\n\n\n";
-        system("exit");
+        exit;
       } else if (choice == "m" || choice == "M") {
         displayMenu();
       } else {
@@ -112,7 +113,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
             processChoice();
         }
     
-      for (int i=0; i <= num_students; i++) {
+      for (int i=0; i < num_students; i++) {
     
         //ADJUST INDEX TO LAST DELETED INDEX TO OVERWRITE | BEST METHOD | LESS COMPLICATED
         for(int f=0; f < num_students; f++)
@@ -301,7 +302,7 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
 
 *Return student index from ID. Can also be used to check if ID already exists*
 
-     int idExists(string referred_id) {
+    int idExists(string referred_id) {
       int i = -1;
       for (int z = 0; z < num_students; z++) {
         if (student[z].ID == referred_id) {
@@ -328,8 +329,6 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
     }
 
 ### FINAL GRADE
-
- 
 
     void calculate() {
       firstRun();
@@ -366,6 +365,10 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
         for (int j = i; j < num_students; j++) {
           if (string(student[i].name) > string(student[j].name) && student[j].deleted == 0 && student[j].index != -1) {
             swap(student[i].ID, student[j].ID);
+            swap(student[i].index, student[j].index);
+            swap(student[i].score_total, student[j].score_total);
+            swap(student[i].remarks, student[j].remarks);
+            swap(student[i].score_final, student[j].score_final);
             swap(student[i].name, student[j].name);
             swap(student[i].sex, student[j].sex);
             swap(student[i].final_grade, student[j].final_grade);
@@ -374,6 +377,8 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
         }
       }
       // OUTPUT SORTED DATA
+      cout << "\nList Sorted by Name\n\n";
+      cout << "\nID NUMBER\tNAME\t\t\tSex\t\tFINAL GRADE";
       for (int f = 0; f < num_students; f++) {
         if (student[f].deleted == 0) {
           cout << endl
@@ -393,6 +398,10 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
         for (int j = i; j < num_students; j++) {
           if (student[i].final_grade <= student[j].final_grade && student[i].deleted == 0 && student[j].index != -1) {
             swap(student[i].ID, student[j].ID);
+            swap(student[i].index, student[j].index);
+            swap(student[i].score_total, student[j].score_total);
+            swap(student[i].remarks, student[j].remarks);
+            swap(student[i].score_final, student[j].score_final);
             swap(student[i].name, student[j].name);
             swap(student[i].sex, student[j].sex);
             swap(student[i].final_grade, student[j].final_grade);
@@ -401,6 +410,8 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
         }
       }
       // OUTPUT SORTED DATA
+      cout << "\nList Sorted by Name\n\n";
+      cout << "\nID NUMBER\tNAME\t\t\tSex\t\tFINAL GRADE";
       for (int f = 0; f < num_students; f++) {
         if (student[f].deleted == 0) {
           cout << endl
@@ -493,7 +504,6 @@ Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak
            << student[index].sex << "\t\t" << student[index].score_total;
       processChoice();
     }
-
 
 ### EXTRA GUARD
 
