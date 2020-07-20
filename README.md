@@ -17,7 +17,7 @@ Iba yung code nung sakin kasi iba ginawa kong approach. Wag niyo kopyahan guys.
 Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak HAHAHAHA.
 
 # MAIN CODE
-**UPDATE:** May binago kong line sa code. Kung nakopya niyo na nung una, kopyahin niyo ulit. Important yung pinalitan kong line. Salamat!
+**UPDATE:** Marami akong binagong line sa code. Kung nakopya niyo na nung una, kopyahin niyo ulit. Important yung mga pinalitan kong line. Salamat!
 ### HEADER & DECLARATION
 
     #include <iostream>
