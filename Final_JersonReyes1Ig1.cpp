@@ -11,7 +11,8 @@ DOCUMENTATION:
 UPDATE: ADDED SUPPORT FOR C++98. UPDATED SORTING METHOD FOR COMPATIBLITY (WINDOWS GCC COMPILER) | OLD METHODS USE NEW C++11
 ERRORS: Every process has error shown if violated. Input guards are placed on every run and sometimes when call starts.
 DISCLAIMER: There are still existing bugs which are not worth trying to fix :)
-NAME SORTATION IS BY FIRST NAME. ADJUST num_students TO YOUR TARGETED AMOUNT OF STUDENTS. REF: LINE 53.
+NAME SORTATION IS BY FIRST NAME. ADJUST num_students TO YOUR TARGETED AMOUNT OF STUDENTS. REF: LINE 57.
+PROJECT SUBMITTED ON JUNE 1, 2020
 
 FUNCTIONS:
 Record viewing, finding, sorting and final grade calculations are handled by the same function.
