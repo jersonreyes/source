@@ -13,7 +13,7 @@ Final output nung sakin. Download niyo na lang kung gusto niyo i-analyze.
 **Final code ko:** https://git.io/JJnj1   
 
 
-Iba yung code nung sakin kasi iba ginawa kong approach. Wag niyo kopyahan guys.   
+Iba yung code nung sakin kasi may sinubukan akong ibang approach. Wag niyo kopyahan guys.   
 Alam ni ma'am yung style ko please wag niyo na subukan para hindi tayo mapahamak HAHAHAHA.
 
 # MAIN CODE
