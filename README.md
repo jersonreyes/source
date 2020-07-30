@@ -7,7 +7,7 @@ Pero hindi ko muna binuo. Kailangan talaga matuto tayo eh. Kasi wala ring silbi 
 
 <img src="bulsu.rd.png" width="100%">
 
-Final output. Download niyo na lang kung gusto niyo i-analyze.   
+Final output nung sakin. Download niyo na lang kung gusto niyo i-analyze.   
 **EXE Application. Pwede i-run:** https://git.io/JJnjx   
 **PDF Documentation:** https://git.io/JJnjN   
 **Final code ko:** https://git.io/JJnj1   
