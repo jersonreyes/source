@@ -285,7 +285,7 @@ void process(string task, string id) {
             << "Please enter Y to continue or enter any key to cancel: " ; cin >> confirm;
 
             if (confirm == 'y' || confirm == 'Y') {
-                //FILL MEMORY WITH DEFAULT'S, EMPTY OUT | NEW EFFICIENT AND SHORT CODE / student[i].index IS BUGGED IF FIRST INDEX IS SET TO 0
+                //FILL MEMORY WITH DEFAULTS, EMPTY OUT | NEW EFFICIENT AND SHORT CODE / student[i].index IS BUGGED IF FIRST INDEX IS SET TO 0
                 int temp = student[i].index;
                 memset(& student[i], 0, sizeof(student[i]));
                 student[i].index = temp;
